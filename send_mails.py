@@ -12,5 +12,5 @@ def send_mail(message):
         server.login(username, password)
         server.sendmail(username, receiver, message)
 
-
-send_mail(message='hi')
+if __name__ == 'main':
+    send_mail(message='hi')
